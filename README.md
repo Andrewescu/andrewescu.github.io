@@ -1,2 +1,1 @@
-# adrescu.github.io
-Personal Website
+# drescuu.github.io
