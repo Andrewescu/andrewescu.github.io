@@ -14,36 +14,81 @@
     
 
     <div class="topDiv">
-        <h1>Drescu</h1>
-            <img src="photo3.jpg" alt="">
+        <!-- <a href="https://github.com/adrescu" target="_blank" rel="noopener noreferrer">adrescu</a> -->
+        <img src="images/photo3.jpg" alt="">
     </div>
 
     <nav>
         <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li>
+                <a href="index.html">About Me</a>
+            </li>
+            <li>
+                <a>Projects</a>
+                <div class="dropdown-content">
+                    <a href="gameLifePage.html">Game of Life</a>
+                    <!-- <a href="#">Gravity Game</a>
+                    <a href="#">Mandelbrot Set</a> -->
+                    <!-- upcoming projects: nodeJS drawing game ... ... data science? -->
+                </div>
+            </li>
+            <li>
+                <a>Teachings</a>
+                <div class="dropdown-content">
+                    <!-- <a href="#">Coding Mandelbrot Set</a> -->
+                    <a href="codingGrav.html">Coding Gravity</a>
+                    <!-- <a href="#">Using Git</a> -->
+                </div>
+            </li>
         </ul>
     </nav>
 
-    <div class="homeContent">
+    <div class="content">
     <div class="imgText1">
-        <img src="andrewProfile.jpg" alt="">
+        <img src="images/andrewProfile.jpg" alt="">
         <div class="textBlock1">
         <h2>About me</h2>
-        <p> Curious, open-minded human aspiring to create software that can positively impact the world.
-        </p>
-        <p> I'm fascinated by the abstract realms of math and physics and their relationship to both our world and the world of computer science.
+        <p > I'm a curious and open-minded human aspiring to create software that can positively impact the world.
+            I'm fascinated by the abstract realms of math and physics and their relationship to both our world and the world of computer science.
             As a software engineer I endeavor to harness the powers of computers to not only better understand our
             complicated world but also to more effectively convey that understanding to everyone. 
             Through the use of graphics rendering I seek to  bring about an intuitive understanding of complicated systems 
-            via easy to understand visuals. I also seek to increase understanding 
-            by harnessing the analytical powers of machine learning technologies. 
+            via easy to understand visuals. I also seek to increase human understanding 
+            by harnessing the analytical powers of computer technologies. 
         </p>
         </div>
     </div>
+    
+    <div class="barSep"></div>
+
+    <div class="imgText2">
+        <p> One thing that never ceases to amaze me about computers is the ease with which you can model physical phenomena.
+            Here is an example of a basic gravity sim that models the behaviour of an accerelarating body under the force of constant gravity.         
+            With a couple lines of code in a modern language like JS you're modeling a force of nature! And on top of that JavaScript makes it 
+            so incredibly easy to share this content with the world as it allows graphics rendering within a browser via a website.
+            <br>
+            How cool is that? 
+        </p>
+
+        <div>
+            <div class="gameBanner">
+                <p>Use 'w'a's'd' or </p>
+                <p>the arrow keys ⬅⬆⬇➡</p>
+                <button id="gameButton" onclick="myFunction()">Start Game</button>
+            </div>
+            <canvas id="gameScreen" width="300" height="400"></canvas>
+        </div>
+        
     </div>
 
+    <div class="barSep"></div>
+    </div>
+    <script src="boxGame.js"></script>
+
+    
+    <div class="contacts">
+        <a href = "mailto: alexandrescu.dev@gmail.com">alexandrescu.dev@gmail.com</a>
+    </div>
+    
 </body>
 </html>

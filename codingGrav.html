@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> 
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="topDiv">
+        <!-- <a href="https://github.com/adrescu" target="_blank" rel="noopener noreferrer">adrescu</a> -->
+        <img src="images/photo3.jpg" alt="">
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">About Me</a>
+            </li>
+            <li>
+                <a>Projects</a>
+                <div class="dropdown-content">
+                    <a href="gameLifePage.html">Game of Life</a>
+                    <!-- <a href="#">Gravity Game</a>
+                    <a href="#">Mandelbrot Set</a> -->
+                    <!-- upcoming projects: nodeJS drawing game ... ... data science? -->
+                </div>
+            </li>
+            <li>
+                <a>Teachings</a>
+                <div class="dropdown-content">
+                    <!-- <a href="#">Coding Mandelbrot Set</a> -->
+                    <a href="codingGrav.html">Coding Gravity</a>
+                    <!-- <a href="#">Using Git</a> -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        
+        <div style="padding-top: 10px;"class="imgText2">
+            <div style="display: flex; flex-direction: column;">
+            <h2 style="margin: 2px;">Coding Gravity</h2>
+            <p style="font-size: 22px;"> Modeling a basic form of gravity is actually a lot easier than you might think. 
+                But first we have to have an understanding of what gravity is. Gravity is a force, 
+                more specifically it is an accerelarating force. Every second the force of Earth's gravity
+                is accerelarating you at a rate of around 9.8 meters per second. What this essentially means is that 
+                every second gravity is applying a force on you such that if you were in free fall 
+                your velocity would increase by 9.8 meters per second every second. For example, lets say we had 
+                box that we dropped from the air. And lets say this box was not moving at all when we released it, so it's 
+                velocity was zero.  After one second it would be falling at a speed of 9.8 meters per second. After two seconds
+                it would be at 19.6 meters per second, and so on. This is demonstrated here, with an object starting at rest and 
+                accerelarating at a constant rate every second.
+
+            
+            </p>
+            </div>
+    
+            <div>
+                <div class="gameBanner" >
+                    <p>Start at rest, fall with  </p>
+                    <p>constant acceleration</p>
+                    <div style="display: flex;">
+                    <button id="gameButton" onclick="myFunction2()">Free Fall</button>
+                    </div>
+                </div>
+                <canvas id="gameScreen" width="300" height="500" style="border: none; border-bottom: 5px solid black;"></canvas>
+            </div>
+            
+        </div>
+        <div class="barSep"></div>
+        
+    
+        
+        
+        <div class="contacts">
+            <a href = "mailto: alexandrescu.dev@gmail.com">alexandrescu.dev@gmail.com</a>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="boxGame.js"></script>
+</body>
